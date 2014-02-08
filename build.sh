@@ -8,6 +8,6 @@ EMSCRIPTEN="/home/jens/workspace/asm/emscripten"
 
 rm -rf CMakeFiles/ CMakeCache.txt
 $EMSCRIPTEN/emconfigure cmake .
-$EMSCRIPTEN/make VERBOSE=1 -j 4
+$EMSCRIPTEN/emmake make VERBOSE=1 -j 4
 mv dogfight dogfight.bc
 $EMSCRIPTEN/emcc dogfight.bc -O2 -s ASM_JS=1 -o index.html
