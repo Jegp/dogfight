@@ -4,7 +4,7 @@
 #include <SDL/SDL.h>
 
 struct Environment {
-    SDL_Surface surface;
+    SDL_Surface* surface;
 };
 
 #endif

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <SDL/SDL.h>
 
-#include <Environment.h>
+#include "Environment.h"
 
 /**
  * The main Game class.
