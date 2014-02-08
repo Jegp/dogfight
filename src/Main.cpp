@@ -5,6 +5,8 @@
 #include <SDL/SDL_mixer.h>
 #include <emscripten.h>
 
+#include <"Environment.h">
+#include <"Game.h">
 
 int x = 0;
 int y = 0;
@@ -49,6 +51,10 @@ int main(int argc, char **argv) {
   // init main loop
   SDL_Init(SDL_INIT_VIDEO);
   screen = SDL_SetVideoMode(600, 450, 32, SDL_HWSURFACE);
+
+  Environment env;
+  env.surface = screen;
+  Game game = new Game(env);
 
   printf("Init: %d\n", TTF_Init());
 
