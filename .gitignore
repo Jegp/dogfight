@@ -3,6 +3,7 @@
 *.log
 *.cmake
 *.bc
+*~
 
 CMakeCache.txt
 CMakeFiles/
